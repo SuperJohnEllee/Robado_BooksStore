@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="IE=edge">
+	<title>Robado Online Bookstore</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="img/logo.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="navbar">
+		<a href="#"><img class="logo" src="img/logo.jpg" height="30" width="30" align="center"></a>
+		<li><a class="nav-link" href="index.html"><span class="fa fa-home"></span> Home</a></li>
+		<li><a class="nav-link" href="cart.html"><span class="fa fa-shopping-cart"></span> Cart</a> </li>
+    <li><a class="nav-link" href="books.html"><span class="fa fa-book"></span> Books</a></li>
+		<li><a class="nav-link" href="signup.html"><span class="fa fa-user"></span> Sign Up</a></li>
+	</nav>
+	<h1 class="text-center">Shop NOW!!</h1>
+  <h2>Total Price: <span id="overallPrice">0</span><br><button type="submit" class="btn_total" onclick="generate();">Generate</button></h2>
+  <div class="row">
+      <div class="book-mr">
+          <img src="img/php_5.jpg" height="250" width="200">
+          <div class="text-center">
+            <p>Learning PHP&nbsp;&nbsp;&nbsp;<span id="php_5_total">0</span><br>
+              <input type="text" name="" id="php_5_price" value="450" disabled><br>
+              <input type="text" name="quantity" id="php_5_quan" onkeyup="php_5();">
+              <br><button type="submit" class="button" onclick="alert('Added to Cart');">Add to Cart</button></p>
+          </div>
+      </div>
+      <div class="book-mr">
+          <img src="img/python.jpg" height="250" width="200">
+          <div class="text-center">
+            <p>Learning Python&nbsp;&nbsp;&nbsp;<span id="python_total">0</span><br>
+              <input type="text" name="" id="python_price" value="500" disabled><br>
+              <input type="text" name="quantity" id="python_quan" onkeyup="python();">
+              <br><button type="submit" class="button" onclick="alert('Added to Cart');">Add to Cart</button></p>
+          </div>
+      </div>
+      <div class="book-mr">
+          <img src="img/tcp_ip.png" height="250" width="200">
+          <div class="text-center">
+            <p>TCP IP Network Admin&nbsp;&nbsp;&nbsp;<span id="tcp_ip_total">0</span><br>
+              <input type="text" name="" id="tcp_ip_price" value="400" disabled><br>
+              <input type="text" name="quantity" id="tcp_ip_quan" onkeyup="tcp_ip();">
+              <br><button type="submit" class="button" onclick="alert('Added to Cart');">Add to Cart</button></p>
+          </div>
+      </div>
+      <div class="book-mr">
+        <img src="img/html_css.jpg" height="250" width="200">
+        <div class="text-center">
+          <p>HTML & CSS&nbsp;&nbsp;&nbsp;<span id="html_css_total">0</span><br>
+          <input type="text" name="" id="html_css_price" value="375" disabled><br>
+          <input type="text" name="quantity" id="html_css_quan" onkeyup="html_css();">
+          <br><button type="submit" class="button" onclick="alert('Added to Cart');">Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="book-mr">
+        <img src="img/learn_java.jpg" height="250" width="200">
+          <div class="text-center">
+            <p>Learn Java&nbsp;&nbsp;&nbsp;<span id="learn_java_total">0</span><br>
+              <input type="text" name="price" id="learn_java_price" value="475" disabled><br>
+              <input type="text" name="quantity" id="learn_java_quan" onkeyup="learn_java();">
+              <br><button type="submit" class="button" onclick="alert('Added to Cart');">Add to Cart</button></p>
+          </div>
+      </div>
+      <div class="book-mr">
+          <img style="opacity: 1.0;" src="img/javascript.jpg" height="250" width="200">
+          <div class="text-center">
+            <p>JavaScript&nbsp;&nbsp;&nbsp;<span id="javascript_total">0</span><br>
+            <input type="text" name="price" id="javascript_price" value="450" disabled><br> 
+            <input type="text" name="quantity" id="javascript_quan" onkeyup="javascript();"> 
+            <br><button type="submit" class="button" onclick="alert('Added to Cart');">Add to Cart</button></p>
+          </div>
+      </div>
+      <div class="book-mr">
+          <img style="opacity: 1.0;" src="img/csharp_nutshell.png" height="250" width="200">
+          <div class="text-center">
+            <p>C# 6.0 in a Nutshell&nbsp;&nbsp;&nbsp;<span id="csharp_nutshell_total">0</span><br>
+            <input type="text" name="price" id="csharp_nutshell_price" value="375" disabled><br>
+            <input type="text" name="quantity" id="csharp_nutshell_quan" onkeyup="csharp_nutshell();">
+            <br><button type="submit" class="button" onclick="alert('Added to Cart');">Add to Cart</button></p>
+          </div>
+      </div>
+      <div class="book-mr">
+          <img style="opacity: 1.0;" src="img/ai_python.jpg" height="250" width="200">
+          <div class="text-center">
+            <p>AI with Python&nbsp;&nbsp;&nbsp;<span id="ai_python_total">0</span><br>
+            <input type="text" name="price" id="ai_python_price" value="650" disabled><br>
+            <input type="text" name="quantity" id="ai_python_quan" onkeyup="ai_python();">
+            <br><button type="submit" class="button" onclick="alert('Added to Cart');">Add to Cart</button></p>
+          </div>
+      </div>
+      <div class="book-mr">
+          <img style="opacity: 1.0;" src="img/oop_c++.jpg" height="250" width="200">
+          <div class="text-center">
+            <p>OOP using C++&nbsp;&nbsp;&nbsp;<span id="oop_total">0</span><br>
+            <input type="text" name="price" id="oop_price" value="480" disabled><br>
+            <input type="text" name="quantity" id="oop_quan" onkeyup="oop();">
+            <br><button type="submit" class="button" onclick="oop();">Add to Cart</button></p>
+          </div>
+      </div>
+      <div class="book-mr">
+          <img style="opacity: 1.0;" src="img/dsa_python.jpg" height="250" width="200">
+          <div class="text-center">
+            <p>DSA in Python&nbsp;&nbsp;&nbsp;<span id="dsa_python_total">0</span><br>
+            <input type="text" name="price" id="dsa_python_price" value="550" disabled><br>
+            <input type="text" name="quantity" id="dsa_python_quan" onkeyup="dsa_python();">
+            <br><button type="submit" class="button" onclick="dsa_python();">Add to Cart</button></p>
+          </div>
+      </div>
+      <div class="book-mr">
+          <img style="opacity: 1.0;" src="img/learn_sql.jpg" height="250" width="200">
+          <div class="text-center">
+            <p>Learning SQL&nbsp;&nbsp;&nbsp;<span id="learn_sql_total">0</span><br>
+            <input type="text" name="price" id="learn_sql_price" value="475" disabled><br>
+            <input type="text" name="quantity" id="learn_sql_quan" onkeyup="learn_sql();">
+            <br><button type="submit" class="button" onclick="learn_sql();">Add to Cart</button></p>
+          </div>
+      </div>
+      <div class="book-mr">
+          <img style="opacity: 1.0;" src="img/machine_learning.png" height="250" width="200">
+          <div class="text-center">
+            <p>Machine Learn in Python&nbsp;&nbsp;&nbsp;<span id="machine_learning_total">0</span><br>
+            <input type="text" name="price" id="machine_learning_price" value="600" disabled><br>
+            <input type="text" name="quantity" id="machine_learning_quan" onkeyup="machine_learning();">
+            <br><button type="submit" class="button" onclick="machine_learning();">Add to Cart</button></p>
+          </div>
+      </div>
+    </div>
+      <div class="text-center">
+    <div class="row book-mx">
+      <div style="margin-right: 40px;">
+        <h1><span class="fa fa-list"></span> Items</h1>
+        <h2 id="books_items"></h2>
+      </div>
+      <div style="margin-right: 40px;">
+        <h1><span class="fa fa-tag"></span> Quantity</h1>
+        <h2 id="books_quantity"></h2>
+      </div>
+      <div style="margin-right: 40px;">
+        <h1><span class="fa fa-dollar"></span> Price</h1>
+        <h2 id="books_price"></h2>
+      </div>
+      <div style="margin-right: 40px; ">
+        <h1><span class="fa fa-bookmark"></span> Total</h1>
+        <h2 id="books_total"></h2>
+      </div>
+    </div>
+  </div>
+<script src="js/function.js"></script>
+</body>
+</html>

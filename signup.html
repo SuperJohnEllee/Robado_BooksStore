@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Robado Books Store</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="img/logo.jpg">
+	<script src="app.js"></script>
+	<script src="angular.min.js"></script>
+</head>
+<body style="background: #FAEBD7;" ng-app="myApp" ng-controller="myCtrl">
+	<nav class="navbar">
+		<a href="#"><img class="logo" src="img/logo.jpg" height="30" width="30" align="center"></a>
+		<li><a class="nav-link" href="index.html"><span class="fa fa-home"></span> Home</a></li>
+		<li><a class="nav-link" href="cart.html"><span class="fa fa-shopping-cart"></span> Cart</a></li>
+    <li><a class="nav-link" href="books.html"><span class="fa fa-book"></span> Books</a></li>
+		<li><a class="nav-link" href="signup.html"><span class="fa fa-user"></span> Sign Up</a></li>
+	</nav>
+
+	<h1 style="text-align: center;">Sign Up</h1>
+
+	<form name="addtext" style="border:1px solid #ccc;">
+  <div class="container">
+  	<label><strong><span class="fa fa-user fa-2x"></span> Last Name</strong></label>
+  	<input type="text" name="lastname" id="lastname" placeholder="Last Name">
+  	<br>
+  	  
+  	<label><strong><span class="fa fa-user fa-2x"></span> First Name</strong></label>
+  	<input type="text" ng-model="firstname" id="firstname" placeholder="First Name">
+  	<br>
+  	 
+  	 <label><strong><span class="fa fa-user fa-2x"></span>  Middle Name</strong></label>
+  	<input type="text" ng-model="midname" id="midname" placeholder="Middle Name">
+  	<br>
+    <label for="email"><strong><span class="fa fa-envelope fa-2x"></span> Email</strong></label>
+    <input type="email" placeholder="Enter Email" id="email" ng-model="email">
+
+  <br>
+  <label><strong><span class="fa fa-user fa-2x"></span> Username</strong></label>
+  <input type="text" ng-model="username" id="username" placeholder="Username">
+	<br>
+    <label for="psw"><strong><span class="fa fa-lock fa-2x"></span> Password</strong></label>
+    <input type="password" placeholder="Enter Password" id="password">
+
+	<br>
+    <label for="psw-repeat"><strong><span class="fa fa-lock fa-2x"></span> Confirm Password</strong></label>
+    <input type="password" placeholder="Repeat Password" ng-model="pass_repeat" id="conf_pass" required>
+
+    <div class="clearfix">
+      <button type="submit" onclick="registerForm();" class="button">Sign Up</button>
+    </div>
+  </div>
+</form>
+	<div style="padding: 1px 0; background-color: #000;" class="text-center text-white">
+		<h2>Made by Ellee Solutions &copy 2018.</h2>
+	</div>
+<script src="js/function.js"></script>
+</body>
+</html>

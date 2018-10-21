@@ -1,0 +1,435 @@
+html{
+  font-family: cursive;
+	background-color: #FAEDB7;
+
+}
+
+.about{
+  background-color: red;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.book-hr{
+  margin-bottom: .3rem; 
+  margin-top: .3rem; 
+  border-color: #265a96
+}
+
+header{
+  background-image: url(img/bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.book_center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20%;
+    opacity: 0.9;
+}
+
+.footer-mr{
+    margin-left: 150px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.btn_total{
+  color: white;
+  width: 10%;
+  font-size: 25px;
+  background-color: blue;
+}
+
+.row{
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.book-4{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.book-6, .book-4{
+
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.book-6{
+
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.logo{
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+}
+
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=date], input[type=password]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+h1.head{
+	text-align: center;
+	color: #ffee58;
+}
+
+.navbar{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #212121;
+  display: block;
+}
+
+
+.book-mr{
+  margin-left: 100px;
+}
+
+.book-mx{
+  margin-left: 400px;
+}
+
+.book-mb{
+  margin-top: 10px;
+}
+
+.col {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.bg-image{
+	background-image: url('http://www.sdjgjx.com/up/pc/3D%20Backgrounds%2017296.jpg');
+	height: 500%;
+	background-position: center;
+	background-size: cover; 
+}
+
+
+.avatar{
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+	display: block;
+}
+
+.democ{
+	text-align: center;
+}
+
+
+.info{
+	background-color: #ffeb3b;
+}
+
+li{
+	float: left;
+}
+
+.nav-link{
+	display: block;
+	color: #b2ebf2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.nav-link:hover{
+	background-color: #006064;
+}
+
+.navbar-brand{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+
+img.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+p{
+	font-size: 20px;
+}
+
+h4{
+	font-size: 25px;
+}
+
+.footer{
+	left: 0;
+	bottom: 0;
+    margin: 150px -8px;
+	background-color: #212121;
+	color: white;
+	text-align: center;
+}
+
+.link{
+	text-decoration: none;
+}
+
+.parallax{
+	 background-image: url(http://www.hesseducation.com/img/HessBookstore_pic1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    opacity: 1.5;
+}
+
+.parallax2{
+  background-image: url(http://img.cadnav.com/allimg/150525/1-1505251K009.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  opacity: 1.5;
+
+}
+
+.parallax3{
+  background-image: url(https://3dwarehouse.sketchup.com/warehouse/getpubliccontent?contentId=033f5d2d-290e-4e8f-ac30-218283e58b58);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  opacity: 1.5;
+
+}
+
+.programming{
+  background-image: url(https://1.bp.blogspot.com/-HXW_Lhr8VPY/VKZrZutA-yI/AAAAAAAADgU/_lMfEx2JDv0/s640/programming-books.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  opacity: 1.0;
+}
+
+.programming2{
+  background-image: url(https://c8.alamy.com/comp/B8B1E3/software-engineeringprogramming-books-on-a-bookshelf-B8B1E3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  opacity: 1.0;
+}
+
+.programming3{
+  background-image: url(https://i2.wp.com/www.techvire.com/wp-content/uploads/2018/01/programming-books-stock_1020.jpg?fit=810%2C456&ssl=1);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  opacity: 1.0;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.col-foot{
+  float: left;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.col-about{
+  width: 30%;
+}
+
+.col-contact{
+  width: 30%;
+}
+
+.col-social-media{
+  width: 20%;
+}
+
+.col-map{
+  width: 30%;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: black;
+  font-weight: inherit;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: teal;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.text-white{
+  color: white;
+}
+
+.img_center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
